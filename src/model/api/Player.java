@@ -1,8 +1,7 @@
 package model.api;
 
 import java.util.List;
-
-import javax.swing.text.Position;
+import model.util.Position;
 
 public interface Player {
 
@@ -12,8 +11,8 @@ public interface Player {
     Bunker getBunker();
     Base getMainBase();
     double getTerritoryPercentage();
-    void addCharacter(Character character);
-    void removeCharacter(Character character);
-    void moveCharacter(Character character, Position newPosition);
+    void addCharacter(Troop character);
+    void removeCharacter(Troop character);
+    void moveCharacter(Troop character, Position newPosition);
     void calculateTerritoryPercentage();
 }

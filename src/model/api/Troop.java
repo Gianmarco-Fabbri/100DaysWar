@@ -11,7 +11,7 @@ public interface Troop {
     int getPlayerId();
     int getDiceCount();
     void move(Position newPosition);
-    void attack(Character opponent);
+    void attack(Troop character2);
     void defend();
     void receiveEnergy(int amount);
     boolean isIsolated(Board board);
