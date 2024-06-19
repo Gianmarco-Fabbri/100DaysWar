@@ -1,19 +1,19 @@
 package controller;
 
-import model.Game;
+import model.impl.GameImpl;
 import view.GameView;
 
 public class GameController {
-    private Game game;
+    private GameImpl game;
     private GameView view;
 
-    public GameController(Game game, GameView view) {
+    public GameController(GameImpl game, GameView view) {
         this.game = game;
         this.view = view;
     }
 
     public void startGame() {
-        game.start();
+        game.startGame();
         view.displayGameName(game.getName());
     }
 
