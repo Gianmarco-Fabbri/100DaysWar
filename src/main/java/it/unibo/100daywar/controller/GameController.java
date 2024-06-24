@@ -14,7 +14,6 @@ public class GameController {
 
     public void startGame() {
         game.startGame();
-        view.displayGameName(game.getName());
     }
 
     public void setGameName(String name) {
